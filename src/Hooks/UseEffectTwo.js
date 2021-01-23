@@ -14,7 +14,7 @@ function UseEffectTwo() {
 
     return (
         <div>
-            {todo.map( val => <h6 key={val.id}>{val.title}</h6>)}
+            {todo.slice(0,5).map( val => <h6 key={val.id}>{val.title}</h6>)}
         </div>
     )
 }
